@@ -64,7 +64,6 @@ const CHARACTERS_QUERY = gql`
         species
         type
         gender
-        __typename
       }
     }
   }

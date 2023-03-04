@@ -11,8 +11,12 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    "types": ["vite/client", "vitest/globals"],
+    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
+    "allowJs": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "test"],
+  "exclude": ["vitest/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
