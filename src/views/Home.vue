@@ -148,7 +148,7 @@ const onPaginate: QTableProps["onRequest"] = ({ pagination, filter }) => {
 
 // }
 
-function showCharacters(props) {
+function showCharacters(props: any) {
   router.push({
     path: `character/${props.row.id}`,
   });
