@@ -134,7 +134,7 @@ const onPaginate: QTableProps["onRequest"] = ({ pagination, filter }) => {
       filter: filter,
     },
     updateQuery: (previousResult, { fetchMoreResult }) => {
-      // No new feed posts
+
       if (!fetchMoreResult) return previousResult;
       return {
         characters: {
@@ -144,9 +144,7 @@ const onPaginate: QTableProps["onRequest"] = ({ pagination, filter }) => {
     },
   });
 };
-// function onPaginate(props: QTableProps['onRequest']) {
 
-// }
 
 function showCharacters(props: any) {
   router.push({
